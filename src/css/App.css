@@ -1,12 +1,13 @@
 .App {
   display: flex;
   flex-direction: column;
+  background-color: rgb(255, 248, 238);
 }
 
 .Header{
   display:flex;
   flex-direction: column;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 }
 
 .UpperHeader{
@@ -21,6 +22,8 @@
   flex: 4;
   display:flex;
   font-size: larger;
+  font-family: 'Gupter';
+  font-size: 20px;
 }
 
 .Menu{
@@ -43,15 +46,19 @@
   display: flex;
   align-items: flex-start;
   padding-left: 10px;
+  font-family: "Inter";
+  font-size: 15px;
 }
 
 .Introduction{
   display: flex;
-  aspect-ratio: 16/9;
+  aspect-ratio: 16/7;
   justify-content: center;
   object-fit: cover;
   background-size: 100%;
   background-image: url(../Images/spacebackground.gif);  
+  box-shadow: 3px 15px 5px rgb(149, 149, 149);
+
 }
 
 
@@ -61,6 +68,7 @@
   align-items: center;
   text-align: center;
 
+
 }
 
 .TextBox_text{
@@ -68,7 +76,12 @@
   white-space: nowrap;
   border-right: 2px solid;
   width: 0;
-  animation: typing 4s steps(30, end) forwards, blinking 1s infinite;
+  font-size: 40px;
+  animation: typing 3s steps(30, end) forwards, blinking 1s infinite;
+  font-family: "Calibri";
+  text-shadow: -1px 1px 0 rgb(255, 255, 255),
+  1px 1px 0 rgb(0, 0, 0);
+
 }
 
 
@@ -90,6 +103,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding-top: 50px;
 
   }
 
@@ -119,7 +133,8 @@
   padding-right: 30px;
   overflow: hidden;
   white-space: nowrap;
-  font-size: 25px;
+  font-size: 30px;
+  font-family: "Ibarra Real Nova";
 }
 
 .Portofolio_components{
@@ -129,6 +144,16 @@
   align-items: center;
 }
 
+.Hyperlink{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-family: "Gupter";
+}
+
+.Hyperlink:hover{
+  text-decoration: underline;
+}
 
 .AboutMe{
   display:flex;
@@ -141,15 +166,17 @@
   display:flex;
   justify-content: center;
   text-align: center;
+  flex-direction: column;
 }
 
 .TextBox_Child{
   display: flex;
-  font-size: 15px;
+  font-size: 20px;
   text-align: left;
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 200px;
+  padding-right: 200px;
   flex-wrap: wrap;
+  font-family: "Inter";
 }
 
 
@@ -162,6 +189,8 @@
 .Portfolio_Box_Title{
   text-align: center;
   padding-bottom: 10px;
+  font-size: 25px;
+  font-family: "Ibarra Real Nova";
 }
 
 .Portfolio_image_container{
@@ -171,12 +200,14 @@
 }
 
 .Portfolio_Image{
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 500px;
+  border-radius: 10%;
+
 }
 
 .Portfolio_Image:hover{
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
@@ -185,4 +216,13 @@
   justify-content: center; 
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.Profile_Image{
+  width: 200px;
+  height: 200px;
+}
+
+.Image_Container{
+  justify-content: center;
 }

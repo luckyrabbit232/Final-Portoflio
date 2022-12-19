@@ -15,28 +15,25 @@ function App() {
       <div className = "Header">
         <div className = "UpperHeader">
           <div className = "Logo">
-            <b>My Portfolio</b>
+            My Portfolio
           </div>
           <div className = "Menu">
             <div className = "Menu_Child">
-              <a href = "#App">
-             <b> Home</b>
+              <a href = "#App" className = "Hyperlink">
+              Home
               </a>
             </div>
             <div className = "Menu_Child2">
-              <a href = "#AboutMe">
-              <b>=About Me</b>
+              <a href = "#AboutMe" className = "Hyperlink">
+              About Me
               </a>
             </div>
           </div>
-        </div>
-        <div className = "LowerHeader">
-          <i>Home</i>
         </div>
       </div>
       <div className = "Introduction">
         <div className = "Introduction_textbox">
-          <p className = "TextBox_text">WELCOME TO MY UIUX PORTFOLIO! MY WORK IS INSPIRED BY AESTHETICAL THEORIES!</p>
+          <p className = "TextBox_text">WELCOME TO MY UIUX PORTFOLIO!</p>
         </div>
       </div>
 
@@ -76,8 +73,11 @@ function App() {
           </div>
         </div>
         <div className = "AboutMe_TextBox">
+          <div className = "Image.Container">
+          <img src = "./Images/Rabbit.jpg" className = "Profile_Image"></img>
+          </div>
           <div className = "TextBox_Child">
-         <p> Hi! My name is Aidan Ma. I am currently a senior student at Brown and will be graduating in Fall 2022! 
+         <p> Hi! I am currently a senior student at Brown and will be graduating in Fall 2022! 
           My degree is in Computer Science - Economics Track. </p>
           
         <p>You can find me either researching about new recipes, or at the gym. I am also an avid tennis player, and I
