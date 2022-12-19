@@ -79,8 +79,8 @@
   font-size: 40px;
   animation: typing 3s steps(30, end) forwards, blinking 1s infinite;
   font-family: "Calibri";
-  text-shadow: -1px 1px 0 rgb(255, 255, 255),
-  1px 1px 0 rgb(0, 0, 0);
+  text-shadow: -1px 1px 0 rgb(0, 0, 0),
+  1px 1px 0 rgb(255, 255, 255);
 
 }
 
@@ -203,12 +203,13 @@
   height: 400px;
   width: 500px;
   border-radius: 10%;
-
+  transition: transform .2s;
 }
 
 .Portfolio_Image:hover{
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  transform: scale(1.05);
 }
 
 .Portfolio_Child{
