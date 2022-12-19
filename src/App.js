@@ -4,16 +4,8 @@ import data from './assets/portfolio-data.json'
 import { useState } from 'react';
 
 // TODO:
-// 1: Create the header
-// 2: Create the introduction with GIF
-// 3: Create The Portfolio in a grid-fashion
-// 4: Create the About Me
-// 5: Create the links between the header pages and the about me
-// 6: Implement fonts
-
-// data.forEach((item) => {
-//   item.image = process.env.PUBLIC_URL + "/" + item.image;
-// });
+// 3: Change fonts
+// 4: Write a better about me
 
 function App() {
   const [displayPortofolio, setPortfolio] = useState(data);
@@ -28,12 +20,12 @@ function App() {
           <div className = "Menu">
             <div className = "Menu_Child">
               <a href = "#App">
-              Home
+             <b> Home</b>
               </a>
             </div>
             <div className = "Menu_Child2">
               <a href = "#AboutMe">
-              About Me
+              <b>=About Me</b>
               </a>
             </div>
           </div>
@@ -44,7 +36,7 @@ function App() {
       </div>
       <div className = "Introduction">
         <div className = "Introduction_textbox">
-          <p className = "TextBox_text">WELCOME TO MY UIUX PORTFOLIO! MY WORK IS INSPIRED BY AESTHETICAL THEORIES LEARNED AT BROWN!</p>
+          <p className = "TextBox_text">WELCOME TO MY UIUX PORTFOLIO! MY WORK IS INSPIRED BY AESTHETICAL THEORIES!</p>
         </div>
       </div>
 
@@ -53,7 +45,6 @@ function App() {
         <div className = "Portfolio_Title">
           <div className = "Title_Divider">
             <img src="./Images/divider.png" className = "Divider_Image"></img>
-
           </div>
           <div className = "Title_Text">
             Portfolio
@@ -88,9 +79,17 @@ function App() {
           <div className = "TextBox_Child">
          <p> Hi! My name is Aidan Ma. I am currently a senior student at Brown and will be graduating in Fall 2022! 
           My degree is in Computer Science - Economics Track. </p>
+          
+        <p>You can find me either researching about new recipes, or at the gym. I am also an avid tennis player, and I
+          hope to learn golf soon. I enjoy travelling with my friends. Recently, I travelled to Peru and love the food
+          and the old architecture there. I even got to see Machu Pichu!
+        </p>
 
-         <p> I am hoping that by taking classes in UI/UX and understanding design philosophy, 
-          I will be able to create more user-centric applications. </p>
+         <p> Meanwhile in the technical side, I enjoy learning more about how industries work. I hope that with my
+          Economics and Computer Science degree, I can create software applications that industries can use to become more efficient.
+          My UIUX class has taught me more about design philosophy, 
+          I hope that I will be able to create more user-centric applications that will help others utilize apps more intuitively. I hope that you enjoy my 
+          portfolio!</p>
           </div>
         </div>        
       </div>

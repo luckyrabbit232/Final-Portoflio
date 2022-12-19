@@ -6,6 +6,7 @@
 .Header{
   display:flex;
   flex-direction: column;
+  padding-bottom: 50px;
 }
 
 .UpperHeader{
@@ -49,6 +50,7 @@
   aspect-ratio: 16/9;
   justify-content: center;
   object-fit: cover;
+  background-size: 100%;
   background-image: url(../Images/spacebackground.gif);  
 }
 
@@ -83,19 +85,19 @@
 }
 
 
-.Portfolio{
-  display:flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  .Portfolio{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
-}
+  }
 
-.Portfolio_Title{
-  display:flex;
-  justify-content: center;
-  padding: 20px;
-}
+  .Portfolio_Title{
+    display:flex;
+    justify-content: center;
+    padding: 20px;
+  }
 
 .Title_Divider{
   flex: 2;
@@ -105,7 +107,7 @@
 }
 
 .Divider_Image{
-  width: 600px;
+  width: 500px;
   height: 1px;
 
 }
@@ -117,6 +119,7 @@
   padding-right: 30px;
   overflow: hidden;
   white-space: nowrap;
+  font-size: 25px;
 }
 
 .Portofolio_components{
@@ -141,8 +144,12 @@
 }
 
 .TextBox_Child{
+  display: flex;
   font-size: 15px;
   text-align: left;
+  padding-left: 150px;
+  padding-right: 150px;
+  flex-wrap: wrap;
 }
 
 
@@ -164,8 +171,8 @@
 }
 
 .Portfolio_Image{
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
 }
 
 .Portfolio_Image:hover{
